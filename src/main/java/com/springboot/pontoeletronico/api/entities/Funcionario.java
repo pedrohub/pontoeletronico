@@ -122,7 +122,7 @@ public class Funcionario implements Serializable{
 		this.qtdHorasTrabalhoDia = qtdHorasTrabalhoDia;
 	}
 
-	@Column(name = "hora_almoco", nullable = false)
+	@Column(name = "hora_almoco", nullable = true)
 	public Float getQtdHorasAlmoco() {
 		return qtdHorasAlmoco;
 	}
