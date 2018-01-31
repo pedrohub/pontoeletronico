@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `funcionario` (
   `email` varchar(255) DEFAULT NULL,
   `nome` varchar(255) NOT NULL,
   `perfil` varchar(255) NOT NULL,
-  `hora_almoco` float NOT NULL,
+  `hora_almoco` float,
   `hora_dia` float DEFAULT NULL,
   `senha` varchar(255) NOT NULL,
   `valor_hora` decimal(19,2) DEFAULT NULL,

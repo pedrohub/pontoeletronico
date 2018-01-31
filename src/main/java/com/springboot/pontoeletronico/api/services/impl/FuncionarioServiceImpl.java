@@ -12,7 +12,7 @@ import com.springboot.pontoeletronico.api.services.FuncionarioService;
 @Service
 public class FuncionarioServiceImpl implements FuncionarioService{
 
-	private static final Logger log = LoggerFactory.getLogger(EmpresaServiceImpl.class);
+	private static final Logger log = LoggerFactory.getLogger(FuncionarioServiceImpl.class);
 	
 	@Autowired
 	private FuncionarioRepository funcionarioRepository;
