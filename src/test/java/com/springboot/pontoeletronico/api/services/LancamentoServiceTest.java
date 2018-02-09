@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
@@ -42,11 +43,13 @@ public class LancamentoServiceTest {
 		BDDMockito.given(this.lancametnoRepository.save(Mockito.any(Lancamento.class))).willReturn(new Lancamento());
 	}
 	
+	@Test
 	public void testBuscarPorfuncionario() {
 		Page<Lancamento> lancamento = this.lancamentoService.buscarPorFuncionarioId(1l, new PageRequest(1, 10));
 		assertNotNull(lancamento);
 	}
 	
+	@Test
 	public void testBuscarPorLancamentoId() {
 		Optional<Lancamento> lancamento = this.lancamentoService.buscarPorId(1l);
 		assertTrue(lancamento.isPresent());
