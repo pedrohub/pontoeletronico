@@ -97,6 +97,13 @@
 			<version>3.6</version>
 		</dependency>
 		
+		<!-- JWT Tokens -->
+		<!--  <dependency>
+			<groupId>org.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.7.0</version>
+		</dependency>-->
+		
 	</dependencies>
 
 	<build>
